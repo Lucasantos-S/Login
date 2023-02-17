@@ -1,8 +1,16 @@
 
+import {BrowserRouter, Routes , Route} from 'react-router-dom'
+import Login from './components/Login'
+import './style/components/app.sass'
 function App() {
   return (
-    <div>
-      <h1>Hellow word</h1>
+    <div id="container">
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Login/>}></Route>
+     </Routes>
+      </BrowserRouter>
+     
     </div>
   )
   
