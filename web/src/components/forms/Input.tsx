@@ -12,7 +12,7 @@ const Input: React.FC<InputProps> = ({ label, name, value, error, ...rest }) => 
   return (
     <>
       <label id="label" htmlFor={name}>
-        {value}
+        {label}
       </label>
       <input id="input" name={name} value={value} {...rest} />
       {error? <p>{error}</p> : null}
