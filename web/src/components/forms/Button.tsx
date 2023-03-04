@@ -1,8 +1,11 @@
-import React from 'react'
+import "../../style/components/button.sass";
+type Props = {
+  children?: JSX.Element | string
+};
 
-function Button() {
+function Button({children}:Props) {
   return (
-    <button>Button</button>
+    <button id='button'>{children}</button>
   )
 }
 

@@ -15,7 +15,7 @@ const Input: React.FC<InputProps> = ({ label, name, value, error, ...rest }) => 
         {label}
       </label>
       <input id="input" name={name} value={value} {...rest} />
-      {error? <p>{error}</p> : null}
+      {error? <p id="error">{error}</p> : null}
     </>
   );
 };

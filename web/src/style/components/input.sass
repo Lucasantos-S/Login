@@ -1,4 +1,4 @@
-
+@use '../variable'
 
 #input
     width: 100%
@@ -12,3 +12,13 @@
     font-weight: 400
     font-size: 1rem
     
+#label
+    font-family: variable.$font-stack
+    font-size: variable.$font-sm
+    color: variable.$text-color
+    padding: 5px 2px
+
+#error 
+    color: variable.$text-error
+    padding: 5px
+    letter-spacing: 1px
